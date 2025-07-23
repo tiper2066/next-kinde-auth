@@ -29,6 +29,7 @@ const BlogPostCard = ({ data }: BlogPostCardProps) => {
                         src={data.imageUrl}
                         alt='Image for blog'
                         fill
+                        sizes='192px'
                         className='object-cover transition-transform duration-300 group-hover:scale-105'
                     />
                 </div>
@@ -51,6 +52,7 @@ const BlogPostCard = ({ data }: BlogPostCardProps) => {
                                     src={data.authorImage}
                                     alt={data.authorName}
                                     fill
+                                    sizes='32px'
                                     className='object-cover'
                                 />
                             </div>
