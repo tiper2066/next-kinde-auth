@@ -26,7 +26,9 @@ export const handleSubmission = async (formData: FormData) => {
             content: content as string,
             imageUrl: url as string,
             authorId: user.id, //  자동생성이며 타입 고정됨, 문제없음
-            authorImage: user.picture as string,
+            // authorImage: user.picture as string,
+            authorImage:
+                (user.picture as string) || ('/avatar_icon.png' as string),
             authorName: user.given_name as string,
         },
     });

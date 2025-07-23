@@ -10,6 +10,7 @@ import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'; // 
 const Navbar = async () => {
     const { getUser } = getKindeServerSession(); //   kinde 에서 세션 정보 가져오기
     const user = await getUser(); //  세션에서 사용자 정보 추출
+    console.log('사용자들: ', user);
 
     return (
         <nav className='flex items-center justify-between py-5'>
